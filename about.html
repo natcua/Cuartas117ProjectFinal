@@ -11,7 +11,9 @@
           crossorigin="anonymous">
     <link href="css/main.css" rel="stylesheet">
 </head>
+
 <body>
+<!-- DEVELOPER: Nathalie Cuartas, IS117-005, Fall 2025 -->
 <div class="container-fluid">
     <div class="row">
         <nav class="navbar navbar-expand-md
@@ -21,6 +23,7 @@
 
             <!-- Brand -->
             <a class="navbar-brand" href="index.html">ONYX</a>
+
             <!-- Responsive Button for the smaller menu -->
             <button class="navbar-toggler" type="button"
                     data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -43,7 +46,7 @@
                             Events
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="events/events.html">Events Overview</a>
+                            <a class="dropdown-item" href="events/events.html">Events</a>
                             <a class="dropdown-item" href="events/past-performances.html">Past Performances</a>
                             <a class="dropdown-item" href="events/future-events.html">Future Events</a>
                             <!-- <a class="dropdown-item" href="#">Link 4</a> -->
@@ -59,11 +62,11 @@
             </label>
         </nav>
 
-        <!-- Jumbotron **TODO: edit for c purposes -->
-        <section class="container-fluid p-0 position-relative">
-            <img src="pictures/boys.JPG" class="w-100" style="height: 350px; object-fit: cover;" alt="About Us Banner">
+        <!-- banner content -->
+        <section class="banner-section container-fluid p-0 position-relative overflow-hidden">
+            <img src="pictures/girls.JPG" class="w-100 h-100" alt="About Us Banner">
 
-            <div class="position-absolute top-50 start-50 translate-middle text-center text-light w-100">
+            <div class="position-absolute top-50 start-50 translate-middle text-center text-light w-100 px-3">
                 <h1 class="display-4 fw-bold">About the Team</h1>
                 <p class="lead mb-0">Our Story, Mission, and the People Behind Onyx</p>
             </div>
@@ -95,19 +98,20 @@
                     <div class="col-lg-6">
                         <h2 class="section-title text-center mb-4">Our Story</h2>
                         <p class="lead">
-                            Founded in New Jersey, Onyx Dance Crew is a community of passionate dancers who bring
-                            creativity, precision, and emotion to every performance.
+                            Founded in Newark, New Jersey, Onyx Dance Crew was created with a mission
+                            to build a community of passionate creatives and provide a platform for dancers
+                            who bring ingenuity, precision, and emotion to every performance.
                         </p>
                         <p>
-                            Under the direction of Kayla Francis and Julian Santiago, Onyx has grown into a dynamic movement
-                            that celebrates individuality while emphasizing teamwork and discipline. The crew is known
-                            for its energetic choreography, diverse styles, and commitment to inspiring others through
-                            the art of dance.
+                            From the beginning, the crew has focused on cultivating an environment where artistry and expression can genuinely thrive.
+                            Onyx is known for its energetic choreography, diverse styles, and dedication to inspiring others through dance.
+                            Many members are students or emerging professionals, and the crew offers them a space to channel their creativity and maintain balance in their busy lives.
                         </p>
                         <p>
-                            What started as a small group of dedicated dancers has evolved into a recognized dance
-                            collective that performs across the tri-state area, bringing together artists from various
-                            backgrounds who share a common passion for movement and expression.
+                            Under the direction of Kayla Francis and Julian Santiago, the group has developed into a dynamic movement that celebrates individuality
+                            while emphasizing teamwork and discipline. Their leadership has helped shape a culture where dancers can push boundaries and support one another’s growth.
+                            What began as a small group of dedicated performers has evolved into a recognized dance collective that now appears across the tri-state area.
+                            Today, Onyx brings together artists from diverse backgrounds, united by a shared passion for movement, expression, and community.
                         </p>
                     </div>
                 </div>
@@ -157,7 +161,7 @@
                     <div class="col-md-6 mb-4">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h5 class="card-title"> <!-- TODO: see if you can add an image here for both cards -->
+                                <h5 class="card-title">
                                     Performances
                                 </h5>
                                 <p>
@@ -185,7 +189,7 @@
                 </div>
             </section>
 
-            <!-- Meet the Directors Section **TODO: Change Images-->
+            <!-- Meet the Directors Section -->
             <section class="mb-5">
                 <h2 class="section-title text-center mb-4">Meet the Directors</h2>
                 <div class="row">
@@ -193,7 +197,7 @@
                         <div class="card">
                             <div class="card-body text-center">
                                 <img src="pictures/Kayla.JPG"
-                                     class="rounded-circle mb-3"
+                                     class="director-img rounded-circle mb-3"
                                      style="width: 150px; height: 150px; object-fit: cover;"
                                      alt="Kayla Francis">
                                 <h4>Kayla Francis</h4>

@@ -9,10 +9,11 @@
           rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
           crossorigin="anonymous">
-    <link href="/css/main.css" rel="stylesheet"> <!-- TODO: make sure file is /css for it to load styling -->
+    <link href="../css/main.css" rel="stylesheet"> <!-- making sure file is /css for it to load properly -->
 </head>
 
 <body>
+<!-- DEVELOPER: Nathalie Cuartas, IS117-005, Fall 2025 -->
 <div class="container-fluid">
     <div class="row">
         <nav class="navbar navbar-expand-md
@@ -20,8 +21,8 @@
                     navbar-dark
                     col-12">
 
-            <!-- Brand -->
-            <a class="navbar-brand" href="index.html">ONYX</a>
+            <!-- Brand - making sure proper hierarchy -->
+            <a class="navbar-brand" href="../index.html">ONYX</a>
 
             <!-- Responsive Button for the smaller menu -->
             <button class="navbar-toggler" type="button"
@@ -30,7 +31,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav" style="gap: 1em;">
+                <ul class="navbar-nav" style="gap: 1em;"> <!-- leaving styling here due to it being minimal -->
                     <!-- Links -->
                     <li class="nav-item">
                         <a class="nav-link" href="../index.html">Home</a>
@@ -38,7 +39,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../about.html">About</a>
                     </li>
-                    <!-- moving 2-tier dropdown here -->
+                    <!-- moving 2-tier dropdown here to follow the wireframe and how it's set up -->
                     <!-- Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
@@ -46,7 +47,7 @@
                             Events
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="events.html">Events Overview</a>
+                            <a class="dropdown-item" href="events.html">Events</a>
                             <a class="dropdown-item" href="past-performances.html">Past Performances</a>
                             <a class="dropdown-item" href="future-events.html">Future Events</a>
                             <!-- <a class="dropdown-item" href="#">Link 4</a> -->
@@ -62,92 +63,99 @@
             </label>
         </nav>
 
-        <!-- Jumbotron **TODO: add style to CSS -->
+        <!-- Top Title content -->
         <section class="container-fluid text-center text-light py-2">
-            <!-- TODO: make sure file is /pictures for it to load properly -->
-            <div class="py-2 my-2">
+            <div class="py-2 my-1">
                 <h1 class="display-2 text fw-bolder">Future Events</h1>
                 <p class="lead text">Join us for upcoming performances and workshops</p>
             </div>
         </section>
 
-        <!-- Main page content -->
+        <!-- Main page content making sure file is /pictures for it to load properly -->
         <div class="container">
             <div class="row mb-5">
                 <!-- Putting image on the left side -->
-                <div class="col-md-6 mb-3 mb-md-0">
+                <div class="col-6 mb-3 mb-md-0">
                     <img src="/pictures/ODC.png" class="img-fluid rounded shadow" alt="Onyx Dance Crew">
                 </div>
                 <!-- Putting text on the right side -->
-                <div class="col-md-6 d-flex flex-colum justify-content-center">
-                    <h1 class="lead">Down below you will find a list of upcoming events to look forward to! Come support the Onyx Dance Crew, we hope to see you soon!</h1>
+                <div class="col-6 d-flex flex-colum justify-content-center">
+                    <h1 class="lead">Want to join us for a performance?
+                        <br><br>
+                        For our dancers: some expectations for performances include actively learning and knowing the choreography (we are always available to help), arriving on time,
+                        being fully prepared with the proper costumes, and maintaining a positive attitude.
+                        Most importantly, stay connected with the team, support one another, and have fun!
+                        <br><br>
+                        Even if you're not dancing with us on stage we would love to have you come support us too, we hope to see you soon!</h1>
                 </div>
             </div>
 
-
-                <div class="col-mb-8">
-                    <!-- Event #1 -->
-                    <div class="event-item shadow-sm mb-4 p-4 border rounded">
-                        <div class="row">
-                            <div class="col-md-4 mb-3 mb-md-0">
-                                <img src="/pictures/jaz_tall.JPG" class="img-fluid rounded shadow" alt="Onyx Dance Crew">
+            <!--Make sure each event item has a max width -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="col-mb-8">
+                        <!-- Event #1 -->
+                        <div class="event-item shadow-sm mb-4 p-4 border rounded">
+                            <div class="row">
+                                <div class="col-4 mb-3 mb-md-0">
+                                    <img src="/pictures/jaz_tall.JPG" class="img-fluid rounded shadow" alt="Onyx Dance Crew">
+                                </div>
+                                <div class="col-8">
+                                    <span class="badge bg-danger mb-2">WORKSHOP</span>
+                                    <h3 class="mb-3">Spring 2026 Dance Workshop</h3>
+                                    <p class="text-dark mb-2"><strong>Date:</strong> January 19, 2026</p>
+                                    <p class="text-dark mb-2"><strong>Time:</strong> 2:00 PM - 6:00 PM</p>
+                                    <p class="text-dark mb-2"><strong>Location:</strong> Newark Arts Center</p>
+                                    <p class="text-dark mb-3"><strong>Cost:</strong> $25 per person</p>
+                                    <p class="mb-3">Open to all experience levels! Learn choreography from Onyx members and gain insight into performance technique.</p>
+                                    <a href="#" class="btn btn-secondary">Register Now</a>
+                                </div>
                             </div>
-                            <div class="col-md-8">
-                                <span class="badge bg-danger mb-2">WORKSHOP</span>
-                                <h3 class="mb-3">Spring 2026 Dance Workshop</h3>
-                                <p class="text-dark mb-2"><strong>Date:</strong> January 19, 2026</p>
-                                <p class="text-dark mb-2"><strong>Time:</strong> 2:00 PM - 6:00 PM</p>
-                                <p class="text-dark mb-2"><strong>Location:</strong>Newark Arts Center</p>
-                                <p class="text-dark mb-3"><strong>Cost:</strong> $25 per person</p>
-                                <p class="mb-3">Open to all experience levels! Learn choreography from Onyx members and gain insight into performance technique.</p>
-                                <a href="#" class="btn btn-secondary">Register Now</a>
+                        </div>
+
+                        <!-- Event #2 -->
+                        <div class="event-item mb-4 p-4 border rounded">
+                            <div class="row">
+                                <div class="col-4 mb-3 mb-md-0">
+                                    <img src="/pictures/gracie.JPG" class="img-fluid rounded shadow" alt="Onyx Dance Crew">
+                                </div>
+                                <div class="col-8">
+                                    <span class="badge bg-danger mb-2">COMPETITION</span>
+                                    <h3 class="mb-3">Reign or Shine 2026</h3>
+                                    <p class="text-dark mb-2"><strong>Date:</strong> February 22, 2026</p>
+                                    <p class="text-dark mb-2"><strong>Time:</strong> 6:00 PM - 9:00 PM</p>
+                                    <p class="text-dark mb-2"><strong>Location:</strong> NJIT WEC Arena</p>
+                                    <p class="text-dark mb-3"><strong>Cost:</strong> $25 per person</p>
+                                    <p class="mb-3">Open to all experience levels! Learn choreography from Onyx members and gain insight into performance technique.</p>
+                                    <a href="#" class="btn btn-secondary">Register Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event #3 -->
+                        <div class="event-item mb-4 p-4 border rounded">
+                            <div class="row">
+                                <div class="col-4 mb-3 mb-md-0">
+                                    <img src="/pictures/kayla_tall.JPG" class="img-fluid rounded shadow" alt="Onyx Dance Crew">
+                                </div>
+                                <div class="col-8">
+                                    <span class="badge bg-danger mb-2">AUDITIONS</span>
+                                    <h3 class="mb-3">New Member Auditions</h3>
+                                    <p class="text-dark mb-2"><strong>Date:</strong> August 27-28, 2026</p>
+                                    <p class="text-dark mb-2"><strong>Time:</strong> 10:00 AM - 4:00 PM</p>
+                                    <p class="text-dark mb-2"><strong>Location:</strong> Newark Arts Center</p>
+                                    <p class="mb-3">Interested in joining Onyx? Come prepared to dance, learn, and connect with our team. Ages 18+ welcome.</p>
+                                    <a href="#" class="btn btn-secondary">Register Now</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Event #2 -->
-                    <div class="event-item mb-4 p-4 border rounded">
-                        <div class="row">
-                            <div class="col-md-4 mb-3 mb-md-0">
-                                <img src="/pictures/gracie.JPG" class="img-fluid rounded shadow" alt="Onyx Dance Crew">
-                            </div>
-                            <div class="col-md-8">
-                                <span class="badge bg-danger mb-2">COMPETITION</span>
-                                <h3 class="mb-3">Reign or Shine 2026</h3>
-                                <p class="text-dark mb-2"><strong>Date:</strong> February 22, 2026</p>
-                                <p class="text-dark mb-2"><strong>Time:</strong> 6:00 PM - 9:00 PM</p>
-                                <p class="text-dark mb-2"><strong>Location:</strong>NJIT WEC Arena</p>
-                                <p class="text-dark mb-3"><strong>Cost:</strong> $25 per person</p>
-                                <p class="mb-3">Open to all experience levels! Learn choreography from Onyx members and gain insight into performance technique.</p>
-                                <a href="#" class="btn btn-secondary">Register Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Event #3 -->
-                    <div class="event-item mb-4 p-4 border rounded">
-                        <div class="row">
-                            <div class="col-md-4 mb-3 mb-md-0">
-                                <img src="/pictures/kayla_tall.JPG" class="img-fluid rounded shadow" alt="Onyx Dance Crew">
-                            </div>
-                            <div class="col-md-8">
-                                <span class="badge bg-danger mb-2">AUDITIONS</span>
-                                <h3 class="mb-3">New Member Auditions</h3>
-                                <p class="text-dark mb-2"><strong>Date:</strong> August 27-28, 2026</p>
-                                <p class="text-dark mb-2"><strong>Time:</strong> 10:00 AM - 4:00 PM</p>
-                                <p class="text-dark mb-2"><strong>Location:</strong>Newark Arts Center</p>
-                                <p class="mb-3">Interested in joining Onyx? Come prepared to dance, learn, and connect with our team. Ages 18+ welcome.</p>
-                                <a href="#" class="btn btn-secondary">Register Now</a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-
             </div>
+
         </div>
-
     </div>
+
 
     <!-- Footer -->
     <footer class="footer page-footer font-small">

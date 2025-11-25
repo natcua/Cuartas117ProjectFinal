@@ -9,10 +9,11 @@
           rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
           crossorigin="anonymous">
-    <link href="/css/main.css" rel="stylesheet"> <!-- TODO: make sure file is /css for it to load styling -->
+    <link href="../css/main.css" rel="stylesheet"> <!-- make sure file is /css for it to load styling -->
 </head>
 
 <body>
+<!-- DEVELOPER: Nathalie Cuartas, IS117-005, Fall 2025 -->
 <div class="container-fluid">
     <div class="row">
         <nav class="navbar navbar-expand-md
@@ -21,7 +22,7 @@
                     col-12">
 
             <!-- Brand -->
-            <a class="navbar-brand" href="index.html">ONYX</a>
+            <a class="navbar-brand" href="../index.html">ONYX</a>
 
             <!-- Responsive Button for the smaller menu -->
             <button class="navbar-toggler" type="button"
@@ -41,12 +42,12 @@
                     <!-- moving 2-tier dropdown here -->
                     <!-- Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="events/events.html" id="navbardrop"
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
                            data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Events
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="events.html">Events Overview</a>
+                            <a class="dropdown-item" href="events.html">Events</a>
                             <a class="dropdown-item" href="past-performances.html">Past Performances</a>
                             <a class="dropdown-item" href="future-events.html">Future Events</a>
                             <!-- <a class="dropdown-item" href="#">Link 4</a> -->
@@ -62,87 +63,95 @@
             </label>
         </nav>
 
-        <!-- Jumbotron **TODO: add style to CSS -->
+        <!-- Top Content -->
         <section class="container-fluid text-center text-light py-2">
-            <!-- TODO: make sure file is /pictures for it to load properly -->
-            <div class="py-2 my-2">
-                <h1 class="display-2 text fw-bolder">Past Performances</h1>
+            <div class="py-2 my-1">
+                <h1 class="display-2 text fw-bolder">Our Past Performances</h1>
                 <p class="lead text">Celebrating Our Moments on Stage</p>
             </div>
         </section>
 
-        <!-- Main page content -->
+        <!-- Main page content - make sure files are /pictures -->
         <div class="container">
             <div class="row mb-5">
                 <!-- Putting image on the left side -->
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <img src="/pictures/ODC.png" class="img-fluid rounded shadow" alt="Onyx Dance Crew">
+                <div class="col-6 mb-3 mb-md-0">
+                    <img src="/pictures/verse_one.JPG" class="img-fluid rounded shadow" alt="Onyx Dance Crew">
                 </div>
                 <!-- Putting text on the right side -->
-                <div class="col-md-6 d-flex flex-colum justify-content-center">
-                    <h1 class="lead">Down below you will find a list of upcoming events to look forward to! Come support the Onyx Dance Crew, we hope to see you soon!</h1>
+                <div class="col-6 d-flex flex-colum justify-content-center">
+                    <h1 class="lead">SCROLL DOWN AND CHECK OUT OUR LATEST PERFORMANCES...
+                        <br><br>
+                        Performing with the team is incredibly rewarding and constantly pushes you to match the energy of the dancers around you.
+                        Even if we make a mistake or something unexpected happens, we always find a way to enjoy the moment and deliver a memorable performance for our audience.
+                        It truly feels like all of the team’s hard work pays off in the end.
+                        <br><br>
+                        This is a pictures from our most recent performance at Verse|One Dance Showcase!
+                    </h1>
                 </div>
             </div>
 
-
-            <div class="col-mb-8">
-                <!-- Event #1 -->
-                <div class="event-item shadow-sm mb-4 p-4 border rounded">
-                    <div class="row">
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <img src="/pictures/jaz_tall.JPG" class="img-fluid rounded shadow" alt="Onyx Dance Crew">
+            <!--Make sure each event item has a max width -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="col-mb-8">
+                        <!-- Event #1 -->
+                        <div class="event-item shadow-sm mb-4 p-3 border rounded">
+                            <div class="row">
+                                <div class="col-4 mb-3 mb-md-0">
+                                    <img src="/pictures/ros.jpeg" class="img-fluid rounded shadow" alt="Onyx Dance Crew">
+                                </div>
+                                <div class="col-8">
+                                    <span class="badge bg-info mb-2">COMPETITION</span>
+                                    <h3 class="mb-3">Reign or Shine 2025</h3>
+                                    <p class="text-dark mb-3"><strong>Date:</strong> February 23, 2026</p>
+                                    <p class="text-dark mb-3"><strong>Time:</strong> 6:00 PM</p>
+                                    <p class="text-dark mb-2"><strong>Location:</strong> NJIT WEC Arena</p>
+                                    <p class="mb-3"> Thank you to NJIT's Finest for inviting us to perform at their annual Reign or Shine Dance Competition.</p>
+                                    <a href="https://www.youtube.com/watch?v=VILDPKpG7cw&list=RDVILDPKpG7cw&start_radio=1" target="_blank" class="btn btn-secondary">Watch Now</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-8">
-                            <span class="badge bg-danger mb-2">WORKSHOP</span>
-                            <h3 class="mb-3">Spring 2026 Dance Workshop</h3>
-                            <p class="text-dark mb-2"><strong>Date:</strong> January 19, 2026</p>
-                            <p class="text-dark mb-2"><strong>Time:</strong> 2:00 PM - 6:00 PM</p>
-                            <p class="text-dark mb-2"><strong>Location:</strong>Newark Arts Center</p>
-                            <p class="text-dark mb-3"><strong>Cost:</strong> $25 per person</p>
-                            <p class="mb-3">Open to all experience levels! Learn choreography from Onyx members and gain insight into performance technique.</p>
-                            <a href="#" class="btn btn-secondary">Register Now</a>
+
+                        <!-- Event #2 -->
+                        <div class="event-item mb-4 p-3 border rounded">
+                            <div class="row">
+                                <div class="col-4 mb-3 mb-md-0">
+                                    <img src="/pictures/boom.jpg" class="img-fluid rounded shadow" alt="Onyx Dance Crew">
+                                </div>
+                                <div class="col-8">
+                                    <span class="badge bg-info mb-2">COMPETITION</span>
+                                    <h3 class="mb-3">BOOM 2025</h3>
+                                    <p class="text-dark mb-3"><strong>Date:</strong> March 28, 2026</p>
+                                    <p class="text-dark mb-3"><strong>Time:</strong> 7:00 PM - 9:00 PM</p>
+                                    <p class="text-dark mb-2"><strong>Location:</strong> NJIT WEC Arena</p>
+                                    <p class="mb-3">Open to all experience levels! Learn choreography from Onyx members and gain insight into performance technique.</p>
+                                    <a href="https://www.youtube.com/watch?v=VILDPKpG7cw&list=RDVILDPKpG7cw&start_radio=1" target="_blank" class="btn btn-secondary">Watch Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event #3 -->
+                        <div class="event-item mb-4 p-3 border rounded">
+                            <div class="row">
+                                <div class="col-4 mb-3 mb-md-0">
+                                    <img src="/pictures/jaz_zoom.JPG" class="img-fluid rounded shadow" alt="Onyx Dance Crew">
+                                </div>
+                                <div class="col-8">
+                                    <span class="badge bg-info mb-2">SHOWCASE</span>
+                                    <h3 class="mb-3">Verse|One Showcase: Level Up</h3>
+                                    <p class="text-dark mb-3"><strong>Date:</strong> November 15, 2025</p>
+                                    <p class="text-dark mb-3"><strong>Time:</strong> 6:30 PM - 10:00 PM</p>
+                                    <p class="text-dark mb-2"><strong>Location:</strong> Cook Student Center</p>
+                                    <p class="mb-3"> We are so happy and grateful to the Verse|One Dance Troupe who organized and invited us to perform at their annual showcase!</p>
+                                    <a href="https://www.youtube.com/watch?v=VILDPKpG7cw&list=RDVILDPKpG7cw&start_radio=1" target="_blank" class="btn btn-secondary">Watch Now</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Event #2 -->
-                <div class="event-item mb-4 p-4 border rounded">
-                    <div class="row">
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <img src="/pictures/gracie.JPG" class="img-fluid rounded shadow" alt="Onyx Dance Crew">
-                        </div>
-                        <div class="col-md-8">
-                            <span class="badge bg-danger mb-2">COMPETITION</span>
-                            <h3 class="mb-3">Reign or Shine 2026</h3>
-                            <p class="text-dark mb-2"><strong>Date:</strong> February 22, 2026</p>
-                            <p class="text-dark mb-2"><strong>Time:</strong> 6:00 PM - 9:00 PM</p>
-                            <p class="text-dark mb-2"><strong>Location:</strong>NJIT WEC Arena</p>
-                            <p class="text-dark mb-3"><strong>Cost:</strong> $25 per person</p>
-                            <p class="mb-3">Open to all experience levels! Learn choreography from Onyx members and gain insight into performance technique.</p>
-                            <a href="#" class="btn btn-secondary">Register Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Event #3 -->
-                <div class="event-item mb-4 p-4 border rounded">
-                    <div class="row">
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <img src="/pictures/kayla_tall.JPG" class="img-fluid rounded shadow" alt="Onyx Dance Crew">
-                        </div>
-                        <div class="col-md-8">
-                            <span class="badge bg-danger mb-2">AUDITIONS</span>
-                            <h3 class="mb-3">New Member Auditions</h3>
-                            <p class="text-dark mb-2"><strong>Date:</strong> August 27-28, 2026</p>
-                            <p class="text-dark mb-2"><strong>Time:</strong> 10:00 AM - 4:00 PM</p>
-                            <p class="text-dark mb-2"><strong>Location:</strong>Newark Arts Center</p>
-                            <p class="mb-3">Interested in joining Onyx? Come prepared to dance, learn, and connect with our team. Ages 18+ welcome.</p>
-                            <a href="#" class="btn btn-secondary">Register Now</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+
 
         </div>
     </div>

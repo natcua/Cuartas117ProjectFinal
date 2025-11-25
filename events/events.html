@@ -9,10 +9,11 @@
           rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
           crossorigin="anonymous">
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
 </head>
 
 <body>
+<!-- DEVELOPER: Nathalie Cuartas, IS117-005, Fall 2025 -->
 <div class="container-fluid">
     <div class="row">
         <nav class="navbar navbar-expand-md
@@ -39,12 +40,12 @@
                     <!-- moving 2-tier dropdown here -->
                     <!-- Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="events/events.html" id="navbardrop"
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
                            data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Events
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="events.html">Events Overview</a>
+                            <a class="dropdown-item" href="events.html">Events</a>
                             <a class="dropdown-item" href="past-performances.html">Past Performances</a>
                             <a class="dropdown-item" href="future-events.html">Future Events</a>
                             <!-- <a class="dropdown-item" href="#">Link 4</a> -->
@@ -60,10 +61,8 @@
             </label>
         </nav>
 
-        <!-- Jumbotron **TODO: add style and image to CSS -->
-        <section class="container-fluid text-center text-light py-5"
-                 style="background-image: url('/pictures/Nat.JPG'); background-size: cover; background-position: center;">
-
+        <!-- Top Content  -->
+        <section class="events-bg container-fluid text-center text-light py-5">
             <div class="py-5 my-5">
                 <h1 class="display-2 fw-bolder">Events Hub</h1>
                 <p class="lead">Celebrating dance through performances and community</p>
@@ -74,21 +73,14 @@
         <div class="row">
             <p class="col-1"></p>
         </div>
-        <div class="row">
-            <p class="col-1"></p>
-        </div>
-        <div class="row">
-            <p class="col-1"></p>
-        </div>
 
         <!-- Main Info -->
         <div class="container my-5">
-
             <!-- Event Cards -->
             <div class="row g-4 mb-5">
                 <div class="col-md-6">
                     <div class="card h-100 shadow-sm">
-                        <img src="/pictures/Kayla.JPG" class="card-img-top" alt="Past Performances">
+                        <img src="/pictures/girls.JPG" class="card-img-top event-img" alt="Past Performances">
                         <div class="card-body">
                             <h3 class="card-title">Past Performances</h3>
                             <p class="text-muted">Relive our memorable performances, competitions, and showcases.</p>
@@ -98,14 +90,14 @@
                                 <li class="mb-2">✓ Picante Social Showcase</li>
                                 <li class="mb-2">✓ Verse|One Showcase</li>
                             </ul>
-                            <a href="past-performances.html" class="btn btn-dark w-100">View All</a>
+                            <a href="past-performances.html" class="btn btn-secondary w-100">View Recent</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card h-100 shadow-sm"> <!-- **TODO: Change boys picture and maybe kayla picture too -->
-                        <img src="/pictures/boys.JPG" class="card-img-top event-img" alt="Future Events">
+                    <div class="card h-100 shadow-sm">
+                        <img src="/pictures/sunset_unfocus.JPG" class="card-img-top event-img" alt="Future Events">
                         <div class="card-body">
                             <h3 class="card-title">Future Events</h3>
                             <p class="text-muted">Join us for workshops, auditions, and upcoming performances.</p>
@@ -115,7 +107,7 @@
                                 <li class="mb-2">★ BOOM Dance Competition</li>
                                 <li class="mb-2">★ New Member Auditions</li>
                             </ul>
-                            <a href="future-events.html" class="btn btn-dark w-100">See What's Next</a>
+                            <a href="future-events.html" class="btn btn-secondary w-100">See What's Next</a>
                         </div>
                     </div>
                 </div>
@@ -145,10 +137,10 @@
 
             <!-- Outreach -->
             <div class="text-center py-4">
-                <h3 class="mb-4">Ready to Join Us?</h3>
+                <h3 class="mb-4 text-muted">Ready to Join Us?</h3>
                 <div class="d-flex justify-content-center gap-3 flex-wrap">
-                    <a href="future-events.html" class="btn btn-dark btn-lg">View Events</a>
-                    <a href="contact.html" class="btn btn-outline-dark btn-lg">Contact Us</a>
+                    <a href="future-events.html" class="btn btn-secondary btn-lg">View Events</a>
+                    <a href="../contact.html" class="btn btn-outline-secondary btn-lg">Contact Us</a>
                 </div>
             </div>
 
