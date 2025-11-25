@@ -1,3 +1,4 @@
+/* DEVELOPER: Nathalie Cuartas, IS117-005, Fall 2025 */
 .footer {
     position: fixed;
     left: 0;
@@ -14,11 +15,11 @@ body {
 }
 /*Image in index.html Jumbotron */
 .main-bg {
-    background: url('/pictures/jaz_out.JPG') center center/cover no-repeat;
+    background: url('../pictures/jaz_out.JPG') center center/cover no-repeat;
 }
 
 .events-bg {
-    background: url('/pictures/alieyah.JPG') center center/cover no-repeat;
+    background: url('../pictures/alieyah.JPG') center center/cover no-repeat;
 }
 .text {
     color: #005BC5;
