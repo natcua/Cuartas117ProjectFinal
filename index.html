@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onyx Dance Crew</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+            <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    navbar-dark
+                    col-12">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html">ONYX</a>
+
+                <!-- Responsive Button for the smaller menu -->
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav" style="gap: 1em;">
+                        <!-- Links -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <!-- moving 2-tier dropdown here -->
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="events/events.html" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Events
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="events/events.html">Events Overview</a>
+                                <a class="dropdown-item" href="events/past-performances.html">Past Performances</a>
+                                <a class="dropdown-item" href="events/future-events.html">Future Events</a>
+                                <!-- <a class="dropdown-item" href="#">Link 4</a> -->
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <label>
+                    <input id="Lg-search" type="text" placeholder="Search...">
+                </label>
+            </nav>
+
+        <!-- Jumbotron **TODO: add style to CSS -->
+        <section class="index-bg container-fluid text-center text-light py-5">
+
+            <div class="py-5 my-5">
+                <h1 class="display-2 fw-bolder">Join the Revolution</h1>
+                <h2 class="text fw-bold mb-4">Movement | Power | Unity</h2> <!-- TODO: change subtext color -->
+                <a href="contact.html" class="btn btn-outline-secondary btn-light btn-lg me-2">Contact Us</a>
+                <a href="/events/future-events.html" class="btn btn-outline-light btn-lg">Join Our Team</a>
+            </div>
+        </section>
+        <div class="row">
+            <p class="col-1"></p>
+        </div>
+        <div class="row">
+            <p class="col-1"></p>
+        </div>
+        <div class="row">
+            <p class="col-1"></p>
+        </div>
+        <!-- Welcome Info -->
+        <div class="container content-section">
+            <!-- Main Content Section -->
+            <section class="mb-5">
+                <div class="text-center mb-5">
+                    <h2 class="section-title mb-4">Welcome to Onyx Dance Crew</h2>
+                    <p class="text-muted">
+                        Welcome to the Onyx Dance Crew website, the home to our revolution through movement. Founded in New Jersey,
+                        we are an elite community of passionate and driven dancers dedicated to bringing
+                        creativity, precision, and raw emotion to every performance. Under the direction of Kayla Francis
+                        and Julian Santiago, Onyx has grown into a dynamic movement that celebrates individuality, empowers every dancer, and emphasizes
+                        unmatched teamwork and discipline. We move to not just perform, but to inspire.
+                    </p>
+                </div>
+            </section>
+            <!-- <div class="text-center">
+                 <h2>Welcome to the Onyx Dance Crew</h2>
+                 <h3>h2 Bootstrap heading (18px)</h3>
+             </div> -->
+            <!-- Cards -->
+            <section class="cards-section bg-light py-5">
+                <div class="container">
+                    <div class="row g-4 justify-content-center text-center">
+
+                        <!-- About Us -->
+                        <div class="col-12 col-md-4 d-flex">
+                            <a href="about.html" class="text-decoration-none w-100">
+                                <div class="card h-100 shadow-sm w-100 clickable-card bg-light">
+                                    <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
+                                        <h5 class="card-title fw-bold mt-3 mb-3 text-dark">About the Team</h5>
+                                        <p class="text-muted">
+                                            We are a powerful collective of passionate dancers, dedicated to blending creativity, precision, and emotion.
+                                            Meet the crew, learn about our directors, Kayla Francis and Julian Santiago, and
+                                            explore the vision behind the 'Movement | Power | Unity' philosophy that drives our success in the New Jersey area dance scene.
+                                            Click here to learn our story.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Events -->
+                        <div class="col-12 col-md-4 d-flex">
+                            <a href="events/events.html" class="text-decoration-none w-100">
+                                <div class="card h-100 shadow-sm w-100 clickable-card bg-light">
+                                    <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
+                                        <h5 class="card-title fw-bold mt-3 mb-3 text-dark">Events</h5>
+                                        <p class="text-muted">
+                                            Witness the Revolution live! This is where you can find our performance schedule,
+                                            including regional competitions, national battles, and our highly anticipated annual showcase.
+                                            Check back regularly for the latest dates, venue details, masterclass opportunities, and ticket information.
+                                            Click here for the full schedule.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Contact -->
+                        <div class="col-12 col-md-4 d-flex">
+                            <a href="contact.html" class="text-decoration-none w-100">
+                                <div class="card h-100 shadow-sm w-100 clickable-card bg-light">
+                                    <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
+                                        <h5 class="card-title fw-bold mt-3 mb-3 text-dark">Get in Touch</h5>
+                                        <p class="text-muted">
+                                            Ready to join us or book a performance?
+                                            If you're looking for audition details, wish to inquire about booking the Onyx Dance Crew for your next event,
+                                            or have any general questions, we're ready to connect.
+                                            Find our contact form, email address, and social media links on the next page.
+                                            Click here to contact us.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--
+        <div class="row">
+        <p class="col-1">Col 1</p>
+        <p class="col-1">Col 2</p>
+        <p class="col-1">Col 3</p>
+        <p class="col-1">Col 4</p>
+        <p class="col-1">Col 5</p>
+        <p class="col-1">Col 6</p>
+        <p class="col-1">Col 7</p>
+        <p class="col-1">Col 8</p>
+        <p class="col-1">Col 9</p>
+        <p class="col-1">Col 10</p>
+        <p class="col-1">Col 11</p>
+        <p class="col-1">Col 12</p>
+        </div>
+        -->
+</div>
+
+    <!-- Footer -->
+ <footer class="footer page-footer font-small">
+     <div class="container">
+        <div class="row">
+            <span class="text-light">&copy; Nathalie Cuartas, 2025 |  Terms Of Use  |  Privacy Statement</span>
+        </div>
+     </div>
+  </footer>
+</div>
+
+    <!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+
+</body>
+</html>

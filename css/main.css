@@ -1,0 +1,98 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #102049;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: .90rem;
+}
+
+/*Image in index.html Jumbotron */
+.index-bg {
+    background: url('/pictures/Jaz.JPG') center center/cover no-repeat;
+}
+
+.text {
+    color: #005BC5;
+}
+
+.navbar {
+    background-color: #102049;
+    padding: 0.5rem;
+}
+
+/* Events - Stats Section */
+.stats-section h2 {
+    color: #2c3e50;
+}
+
+.stats-section {
+    background-color: #ebf5fa;
+    border-radius: 8px;
+}
+
+/* Future events - Sidebar img */
+.sidebar-image {
+    position: sticky;
+    top: 20px;
+}
+
+.sidebar-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* future events - event items */
+.event-item {
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease;
+}
+
+.event-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar-image {
+        position: relative;
+        top: 0;
+    }
+
+    .event-img {
+        height: 180px;
+    }
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/*
+.jumbotron-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/pictures/Jaz.JPG') center center/cover no-repeat;
+    opacity: 0.15;
+    z-index: 0;
+    }
+ */

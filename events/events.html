@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onyx Dance Crew</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    navbar-dark
+                    col-12">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="../index.html">ONYX</a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav" style="gap: 1em;">
+                    <!-- Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About</a>
+                    </li>
+                    <!-- moving 2-tier dropdown here -->
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="events/events.html" id="navbardrop"
+                           data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Events
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="events.html">Events Overview</a>
+                            <a class="dropdown-item" href="past-performances.html">Past Performances</a>
+                            <a class="dropdown-item" href="future-events.html">Future Events</a>
+                            <!-- <a class="dropdown-item" href="#">Link 4</a> -->
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <label>
+                <input id="Lg-search" type="text" placeholder="Search...">
+            </label>
+        </nav>
+
+        <!-- Jumbotron **TODO: add style and image to CSS -->
+        <section class="container-fluid text-center text-light py-5"
+                 style="background-image: url('/pictures/Nat.JPG'); background-size: cover; background-position: center;">
+
+            <div class="py-5 my-5">
+                <h1 class="display-2 fw-bolder">Events Hub</h1>
+                <p class="lead">Celebrating dance through performances and community</p>
+            </div>
+        </section>
+
+        <!-- Make Space After Banner -->
+        <div class="row">
+            <p class="col-1"></p>
+        </div>
+        <div class="row">
+            <p class="col-1"></p>
+        </div>
+        <div class="row">
+            <p class="col-1"></p>
+        </div>
+
+        <!-- Main Info -->
+        <div class="container my-5">
+
+            <!-- Event Cards -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="/pictures/Kayla.JPG" class="card-img-top" alt="Past Performances">
+                        <div class="card-body">
+                            <h3 class="card-title">Past Performances</h3>
+                            <p class="text-muted">Relive our memorable performances, competitions, and showcases.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2">✓ NJIT "Reign or Shine" Competition</li>
+                                <li class="mb-2">✓ BOOM Dance Competition</li>
+                                <li class="mb-2">✓ Picante Social Showcase</li>
+                                <li class="mb-2">✓ Verse|One Showcase</li>
+                            </ul>
+                            <a href="past-performances.html" class="btn btn-dark w-100">View All</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm"> <!-- **TODO: Change boys picture and maybe kayla picture too -->
+                        <img src="/pictures/boys.JPG" class="card-img-top event-img" alt="Future Events">
+                        <div class="card-body">
+                            <h3 class="card-title">Future Events</h3>
+                            <p class="text-muted">Join us for workshops, auditions, and upcoming performances.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2">★ Spring 2026 Dance Workshop</li>
+                                <li class="mb-2">★ Spring 2026 Reign or Shine Competition</li>
+                                <li class="mb-2">★ BOOM Dance Competition</li>
+                                <li class="mb-2">★ New Member Auditions</li>
+                            </ul>
+                            <a href="future-events.html" class="btn btn-dark w-100">See What's Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-section text-center py-5 mb-5">
+                <div class="row">
+                    <div class="col-6 col-md-3 mb-4">
+                        <h2 class="display-5 fw-bold">20+</h2>
+                        <p class="text-muted">Performances</p>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <h2 class="display-5 fw-bold">42</h2>
+                        <p class="text-muted">Team Members</p>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <h2 class="display-5 fw-bold">8</h2>
+                        <p class="text-muted">Workshops</p>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <h2 class="display-5 fw-bold">500+</h2>
+                        <p class="text-muted">Audience Reach</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outreach -->
+            <div class="text-center py-4">
+                <h3 class="mb-4">Ready to Join Us?</h3>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="future-events.html" class="btn btn-dark btn-lg">View Events</a>
+                    <a href="contact.html" class="btn btn-outline-dark btn-lg">Contact Us</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer page-footer font-small">
+        <div class="container">
+            <div class="row">
+                <span class="text-light">&copy; Nathalie Cuartas, 2025 |  Terms Of Use  |  Privacy Statement</span>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+
+</body>
+</html>
